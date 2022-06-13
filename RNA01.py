@@ -1,6 +1,6 @@
 from numpy import dot, array, random
 from typing import List
-
+from scartch.linear_algebra import distance, add, scalar_multiply, vector_mean
 import math
 
 from tqdm import tqdm
@@ -124,6 +124,38 @@ rede = [[[random.random() for _ in range(10 + 1)] for _ in range(NUM_HIDDEN)],
 def argmax(array: array) -> int:
     return max(array.index(max(array)), key=lambda x: x[1])
 
+### gradiente de descida
+def sum_of_squares(v: array) -> float:
+    return dot(v, v)
+
+def difference_quotient(f: float, x: float, h: float) -> float:
+    return (f(x + h) - f(x)) / h
+
+def square(x: float) -> float:
+    return x * x
+
+def derivative(x: float) -> float:
+    return 2 * x
+
+def partial_difference_quotient(f: float, v: array, i: int, h: float) -> float:
+    w = [v_i + (h if j == i else 0) for j, v_i in enumerate(v)]
+    return (f(w) - f(v)) / h
+
+def gradient_step(v: array, gradient: array, step_size: float) -> array:
+    assert len(v)==len(gradient)
+    step = scalar_multiply(step_size, gradient)
+    return add(v, step)
+
+def sum_of_squares_gradient(v: array) -> array:
+    return [2 * v_i for v_i in v]
+
+def linear_gradient(x: float, y: float, theta: array) -> array:
+    slope, intercept = theta
+    predicted = slope * x + intercept
+    error = predicted - y
+    squared_error = error ** 2
+    grad = [2 * error * x, 2 * error]
+    return grad
 
 num_correct = 0
 
