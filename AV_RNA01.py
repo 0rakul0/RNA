@@ -147,7 +147,7 @@ class AV_RNA():
         melhores_prams = grid_search.best_params_
         melhor_result = grid_search.best_score_
 
-        print("\n##### SVC #####")
+        print("\n##### RNA #####")
         print(f"melhores parametros: {melhores_prams}")
         print(f"melhores resultados: {melhor_result}")
 
@@ -158,7 +158,7 @@ class AV_RNA():
                                             min_samples_split=2, splitter='random')
 
             score = cross_val_score(arvore, X, y, cv=kf)
-            print(f"validacao cruzada: {score}")
+            print(f"validacao cruzada _ arvore de decisão: {score}")
             self.resultados_arvore.append(score.mean())
 
     def validador_random_florest(self,X,y):
@@ -168,7 +168,7 @@ class AV_RNA():
                                             min_samples_split=2, n_estimators=100)
 
             score = cross_val_score(arvore, X, y, cv=kf)
-            print(f"validacao cruzada: {score}")
+            print(f"validacao cruzada _ random florest: {score}")
             self.resultados_random_arvore.append(score.mean())
 
     def validador_knn(self, X,y):
@@ -177,7 +177,7 @@ class AV_RNA():
             vali_knn = KNeighborsClassifier(n_neighbors= 20, p= 1)
 
             score = cross_val_score(vali_knn, X, y, cv=kf)
-            print(f"validacao cruzada: {score}")
+            print(f"validacao cruzada _ knn: {score}")
             self.resultados_knn.append(score.mean())
 
     def validador_regressao_logistica(self, X,y):
@@ -186,7 +186,7 @@ class AV_RNA():
             vali_regressao_logistica = LogisticRegression(C= 1.0, solver= 'lbfgs', tol= 0.0001)
 
             score = cross_val_score(vali_regressao_logistica, X, y, cv=kf)
-            print(f"validacao cruzada: {score}")
+            print(f"validacao cruzada _ regressão logistica: {score}")
             self.resultados_regressao_logistica.append(score.mean())
 
     def validador_svc(self, X,y):
@@ -195,15 +195,16 @@ class AV_RNA():
             vali_svc = SVC(C = 1.5, kernel ='rbf', tol = 0.001)
 
             score = cross_val_score(vali_svc, X, y, cv=kf)
-            print(f"validacao cruzada: {score}")
+            print(f"validacao cruzada _ svc: {score}")
             self.resultados_svc.append(score.mean())
 
     def validador_rna(self, X, y):
         for i in range(30):
             kf = KFold(n_splits=10, shuffle=True, random_state=i)
             vali_rna = MLPClassifier(activation='relu', batch_size= 10, solver= 'adam')
+
             score = cross_val_score(vali_rna, X, y, cv=kf)
-            print(f"interações: {i}")
+            print(f"validação cruzada _ rna: {score}")
             self.resultados_rna.append(score.mean())
 
     def df_cross_valid(self):
