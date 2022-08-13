@@ -1,5 +1,5 @@
 import numpy as np
-import tensorflow01 as tf
+import tensorflow as tf
 
 def binary_encode(i, num_digits):
     return np.array([i >> d & 1 for d in range(num_digits)])

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../EngenhariadeDados/2.Modelo Relacional/Projeto Prático/1.CreateTable.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/../../EngenhariadeDados/2.Modelo Relacional/Projeto Prático/2.InsertClientes.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/../../EngenhariadeDados/2.Modelo Relacional/Projeto Prático/3.InsertIntoProdutos.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/../../EngenhariadeDados/2.Modelo Relacional/Projeto Prático/4.InsertIntoVendedores.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/../../EngenhariadeDados/2.Modelo Relacional/Projeto Prático/5.InsertIntoVendas.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/../../EngenhariadeDados/2.Modelo Relacional/Projeto Prático/6.InsertItensVenda.sql" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="PostgreSQL" />
+  </component>
+</project>

@@ -1,4 +1,5 @@
 import pandas as pd
+from pandas_profiling import ProfileReport
 import numpy as np
 import pickle
 
@@ -25,6 +26,14 @@ class AV_RNA02():
         print("### desvio padrão ###")
         print((df_resultados.std()/df_resultados.mean())*100)
 
+        profile = ProfileReport(df_resultados, title="Pandas Profiling Report")
+
+        # o profile gera um arquivo descritivo dos dados
+        profile.to_file("df_resultados.html")
+
+
+
 if __name__ == "__main__":
     av = AV_RNA02()
     av.ler_csv()
+
