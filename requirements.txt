@@ -3,7 +3,5 @@ numpy
 seaborn
 matplotlib
 plotly
-sklearn
 yellowbrick
-spacy==2.2.3
 wordcloud

@@ -2,7 +2,7 @@ import hashlib
 import os
 import tarfile
 import pandas as pd
-from pandas_profiling import ProfileReport
+
 import numpy as np
 import matplotlib.pyplot as plt
 from six.moves import urllib
