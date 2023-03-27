@@ -1,8 +1,8 @@
 import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
-from tensorflow.keras.datasets import mnist
-from tensorflow.keras.utils import to_categorical
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
+from tensorflow.python.keras import *
+from keras.utils import to_categorical
 from time import time
 
 
@@ -29,13 +29,13 @@ def run(model, x_train, y_train, epochs=128, batch_size=32):
     return end - start
 
 
-(x_train, y_train), (_, _) = mnist.load_data()
+(x_train, y_train), (_, _) = tf.keras.datasets.mnist.load_data()
 x_train = x_train/255
 x_train = x_train.reshape(-1, 28, 28, 1)
 y_train = to_categorical(y_train, num_classes = 10)
 
 cpu_model = conv_model('CPU', 64, 3)
-gpu_model = conv_model('DML', 64, 3)
+gpu_model = conv_model('GPU', 64, 3)
 
 epochs = 8
 bz = 64
