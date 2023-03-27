@@ -5,23 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5be3def-9403-4bcf-a997-b942ef483471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/breast_cancer/entradas_breast.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/breast_cancer/saidas_breast.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_08.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/classificador_cancer.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desenv_cancer/classificador_cancer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verifica_gpu_cpu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/iris/iris.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banchmark_cpu_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/banchmark_cpu_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_RNA01.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/AV_RNA01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV_RNA02.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/AV_RNA02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IA_fuzz_cotas.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/IA_fuzz_cotas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLP_spacy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/NLP_spacy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLP_spacy_miner_text.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/NLP_spacy_miner_text.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RNA01.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RNA02.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RNA03.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RNA04.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banchmark_cpu_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/banchmark_cpu_gpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/df_resultados.html" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/df_resultados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pre_RNA01.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/pre_RNA01.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenso02.py" beforeDir="false" afterPath="$PROJECT_DIR$/livro_tensor/tenso02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesor01.py" beforeDir="false" afterPath="$PROJECT_DIR$/livro_tensor/tesor01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verifica_gpu_cpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/verifica_gpu_cpu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +57,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/GITHUB/RNA/desenv",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "last_opened_file_path": "D:/GITHUB/RNA",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,6 +70,10 @@
       <recent name="E:\GITHUB\RNA\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GITHUB\RNA\data\iris" />
+      <recent name="D:\GITHUB\RNA\base_estudos" />
+      <recent name="D:\GITHUB\RNA\nlp" />
+      <recent name="D:\GITHUB\RNA\livro_tensor" />
       <recent name="E:\GITHUB\RNA\data" />
     </key>
   </component>
@@ -83,6 +90,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_06.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -104,6 +112,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_07.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -125,6 +134,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_08.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -146,6 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_09.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -167,6 +178,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verifica_gpu_cpu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -196,6 +208,7 @@
       <updated>1669212472655</updated>
       <workItem from="1669212477846" duration="12065000" />
       <workItem from="1669394074926" duration="12016000" />
+      <workItem from="1679944235154" duration="3032000" />
     </task>
     <servers />
   </component>
