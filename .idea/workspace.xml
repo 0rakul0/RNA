@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5be3def-9403-4bcf-a997-b942ef483471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/iris/iris.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RNA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RNA.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AV_RNA01.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/AV_RNA01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AV_RNA02.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/AV_RNA02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IA_fuzz_cotas.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/IA_fuzz_cotas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NLP_spacy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/NLP_spacy.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NLP_spacy_miner_text.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/NLP_spacy_miner_text.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RNA01.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RNA02.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RNA03.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RNA04.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/RNA04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banchmark_cpu_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/banchmark_cpu_gpu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/df_resultados.html" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/df_resultados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_RNA01.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/pre_RNA01.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenso02.py" beforeDir="false" afterPath="$PROJECT_DIR$/livro_tensor/tenso02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesor01.py" beforeDir="false" afterPath="$PROJECT_DIR$/livro_tensor/tesor01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verifica_gpu_cpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_estudos/verifica_gpu_cpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desenv_cancer/RNA_dev_06.py" beforeDir="false" afterPath="$PROJECT_DIR$/desenv_cancer/RNA_dev_06.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/multclasses/RNA_iris_multclass_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +46,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/GITHUB/RNA",
+    "last_opened_file_path": "D:/GITHUB/RNA/multclasses",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GITHUB\RNA\multclasses" />
       <recent name="D:\GITHUB\RNA\desenv" />
       <recent name="D:\GITHUB\RNA\data\breast_cancer" />
       <recent name="E:\GITHUB\RNA" />
@@ -77,73 +67,7 @@
       <recent name="E:\GITHUB\RNA\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RNA_dev_09">
-    <configuration name="RNA_dev_06" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RNA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/desenv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_06.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="RNA_dev_07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RNA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/desenv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_07.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="RNA_dev_08" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RNA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/desenv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desenv/RNA_dev_08.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.RNA_iris_multclass_04">
     <configuration name="RNA_dev_09" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RNA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="verifica_gpu_cpu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RNA_iris_multclass_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RNA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -174,12 +98,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multclasses" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/verifica_gpu_cpu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multclasses/RNA_iris_multclass_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,13 +112,92 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="RNA_iris_multclass_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RNA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multclasses" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multclasses/RNA_iris_multclass_02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RNA_iris_multclass_03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RNA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multclasses" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multclasses/RNA_iris_multclass_03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RNA_iris_multclass_04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RNA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multclasses" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multclasses/RNA_iris_multclass_04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="RNA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.RNA_iris_multclass_04" />
+        <item itemvalue="Python.RNA_iris_multclass_03" />
+        <item itemvalue="Python.RNA_iris_multclass_02" />
+        <item itemvalue="Python.RNA_iris_multclass_01" />
         <item itemvalue="Python.RNA_dev_09" />
-        <item itemvalue="Python.verifica_gpu_cpu" />
-        <item itemvalue="Python.RNA_dev_08" />
-        <item itemvalue="Python.RNA_dev_07" />
-        <item itemvalue="Python.RNA_dev_06" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +211,7 @@
       <updated>1669212472655</updated>
       <workItem from="1669212477846" duration="12065000" />
       <workItem from="1669394074926" duration="12016000" />
-      <workItem from="1679944235154" duration="3032000" />
+      <workItem from="1679944235154" duration="10218000" />
     </task>
     <servers />
   </component>
@@ -236,5 +239,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RNA$RNA_iris_multclass_01.coverage" NAME="RNA_iris_multclass_01 Coverage Results" MODIFIED="1679951019470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multclasses" />
   </component>
 </project>

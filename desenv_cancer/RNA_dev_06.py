@@ -2,8 +2,6 @@
 ajustando os pesos
 """
 import pandas as pd
-import keras
-from keras import optimizers
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.wrappers.scikit_learn import KerasClassifier

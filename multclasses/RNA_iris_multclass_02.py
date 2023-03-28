@@ -1,12 +1,14 @@
 """
-montando a base
+montando e tratando base
 """
+import numpy as np
 import pandas as pd
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.utils import np_utils
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import confusion_matrix
 
 # puxando a base
 base = pd.read_csv('../data/iris/iris.csv')
@@ -53,3 +55,21 @@ classificador.compile(optimizer='adam', loss='categorical_crossentropy', metrics
 # treinamento
 classificador.fit(previsores_treino, classe_treino, batch_size=10, epochs=1000)
 
+"""
+o metodo que vamos usar para avaliação atomatica é o evaluete
+"""
+# resultado
+resultado = classificador.evaluate(previsores_teste, classe_teste)
+
+# previsões
+previsoes = classificador.predict(previsores_teste)
+previsoes = (previsoes > 0.5)
+
+# como a matriz de confusão só aceita numero de uma coluna aqui estou convertendo novamente a versão original
+classe_teste_np = [np.argmax(t) for t in classe_teste]
+previsoes_np = [np.argmax(t) for t in previsoes]
+
+
+# matrix de confusão
+matriz = confusion_matrix(previsoes_np, classe_teste_np)
+print(matriz)
