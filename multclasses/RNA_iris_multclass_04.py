@@ -33,7 +33,7 @@ classe = labelenconder.fit_transform(classe)
 classe_dummy = np_utils.to_categorical(classe)
 
 
-def criar_rede(optimizer, loss, activation, neurons):
+def criar_rede(optimizer, loss, activation, neurons, dropout,kernel_initializer):
     """
     começo da estrutura neural
     o numero de colunas + o numero de possiveis resopstas > 4 + 3 = 7 / 2 = 3.5
@@ -41,11 +41,11 @@ def criar_rede(optimizer, loss, activation, neurons):
     """
     classificador = Sequential()
     # primeira camada oculta
-    classificador.add(Dense(units=neurons, activation=activation, input_dim=4))
-    classificador.add(Dropout(0.2))
+    classificador.add(Dense(units=neurons, activation=activation,kernel_initializer = kernel_initializer, input_dim=4))
+    classificador.add(Dropout(dropout))
     # segunda camada oculta
-    classificador.add(Dense(units=neurons, activation=activation))
-    classificador.add(Dropout(0.2))
+    classificador.add(Dense(units=neurons, activation=activation,kernel_initializer = kernel_initializer))
+    classificador.add(Dropout(dropout))
     # neuronios de saida -> 3
     classificador.add(Dense(units=3, activation='softmax'))
     # compilador
@@ -57,12 +57,14 @@ classificador = KerasClassifier(build_fn=criar_rede)
 """
 o metodo que vamos usar para avaliação atomatica é o evaluete
 """
-parametros = {'batch_size':[5,10],
-              'epochs':[100, 1000],
+parametros = {'batch_size':[10,30],
+              'epochs':[1000, 3000],
               'optimizer':['adam','sgd'],
-              'loss':['categorical_crossentropy', 'hinge'],
-              'activation':['relu', 'tanh'],
-              'neurons':[4,8]}
+              'dropout':[0.2,0.4],
+              'kernel_initializer': ['random_uniform', 'normal'],
+              'loss':['categorical_crossentropy', 'hinge','sparse_categorical_crossentropy'],
+              'activation': ['relu', 'tanh', 'sigmoid'],
+              'neurons': [4, 8, 16]}
 
 # chamando o grid para passar o dict com os paramentros
 grid_search = GridSearchCV(estimator=classificador, param_grid=parametros, scoring='accuracy', cv=5)
