@@ -17,7 +17,6 @@ classe = pd.read_csv('../data/breast_cancer/saidas_breast.csv')
 def criar_rede():
     # chama o sequenciador
     classificador = Sequential()
-
     """
     claculo para saber quantos neuronios usar para a camanda oculta basta somar entrada e saida e dividir por dois
     entrada é o numero de colunas do dataset, no caso atual é 30
@@ -58,6 +57,7 @@ classificador = KerasClassifier(build_fn = criar_rede, # chama a função para c
 resultados = cross_val_score(estimator=classificador, # pega a rede classificada
                              X=previsores, y=classe, # faz a validação cruzada
                              cv=10, scoring='accuracy')
+
 print('array com os resultados: ', resultados)
 
 # como é gerado um array com 10 valores, usamo então a média deles

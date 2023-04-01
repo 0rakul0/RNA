@@ -16,7 +16,7 @@ classificador = model_from_json(estrutura_rede)
 classificador.load_weights('./classificador_iris.h5')
 
 # Criar e classificar novo registro
-novo = np.array([[3.2, 4.5, 0.9, 1.1]])
+novo = np.array([[3, 5, 1, 1.2]])
 previsao = classificador.predict(novo)
 previsao = (previsao > 0.5)
 if previsao[0][0] == True and previsao[0][1] == False and previsao[0][2] == False:
