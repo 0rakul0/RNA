@@ -8,7 +8,6 @@ from keras.layers import Dense, Dropout
 from keras.utils import np_utils
 from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 
 # puxando a base

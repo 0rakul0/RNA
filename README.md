@@ -115,3 +115,9 @@ with open('processos_base.pkl', mode='wb') as f:
 
 
 ````
+
+
+#### para uasr a GPU
+<p> instalar o miniconda
+<p> usar o python 3.7
+<p> instalar o tensorflow-gpu > ele vai puxar o tensorflow 2.6 ou algo parecido

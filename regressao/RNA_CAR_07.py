@@ -2,14 +2,10 @@
 melhores parametros
 """
 import pandas as pd
-import tensorflow as tf
 from keras.models import Sequential
 from keras.layers import Dense
-from sklearn.model_selection import cross_val_score
-from scikeras.wrappers import KerasClassifier, KerasRegressor
-from keras import backend as k
-from sklearn import metrics
-import time
+from keras.wrappers.scikit_learn import KerasRegressor
+from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn.compose import ColumnTransformer
 
@@ -59,24 +55,33 @@ ct = ColumnTransformer([('onehotencoder', OneHotEncoder(categories='auto'), [0,1
 previsores = ct.fit_transform(previsores).toarray()
 
 
-def criar_rede():  # atualizado: tensorflow==2.0.0-beta1
-    k.clear_session()
-    regressor = Sequential([
-        tf.keras.layers.Dense(units=158, activation='relu', input_dim=317),
-        tf.keras.layers.Dense(units=158, activation='relu'),
-        tf.keras.layers.Dense(units=1, activation='linear')])
-    regressor.compile(loss='mean_absolute_error', optimizer='adam',
+def criar_rede(loos):  # atualizado: tensorflow==2.0.0-beta1
+    regressor = Sequential()
+    regressor.add(Dense(units=158, activation='relu', input_dim=317))
+    regressor.add(Dense(units=158, activation='relu'))
+    regressor.add(Dense(units=1, activation='linear'))
+    regressor.compile(loss=loos, optimizer='adam',
                       metrics=['mean_absolute_error'])
     return regressor
 
-# validação cruzada
-regressor = KerasRegressor(model = criar_rede)
 
-parametros = {'batch_size':[10,30],
-              'epochs':[50, 100],
-              'optimizer':['adam','sgd'],
-              'loss':['binary_crossentropy', 'hinge'],
-              'kernel_initializer':['random_uniform','normal'],
-              'activation':['relu', 'tanh'],
-              'neurons':[158,317]}
+# Não é necessário alterar o parâmetro metrics pois ele é usado somente para
+# mostrar o resultado e de fato ele não é utilizado no treinamento da rede neural
 
+regressor = KerasRegressor(build_fn = criar_rede, epochs = 100, batch_size = 300)
+
+parametros = {'loos': ['mean_squared_error', 'mean_absolute_error',
+                       'mean_absolute_percentage_error', 'mean_squared_logarithmic_error',
+                       'squared_hinge']}
+
+grid_search = GridSearchCV(estimator = regressor,
+                           param_grid = parametros,
+                           cv = 5)
+grid_search = grid_search.fit(previsores, preco_real)
+
+melhores_prams = grid_search.best_params_
+melhor_result = grid_search.best_score_
+
+print("\n##### RNA #####")
+print(f"melhores parametros: {melhores_prams}")
+print(f"melhores resultados: {melhor_result}")

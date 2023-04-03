@@ -2,14 +2,10 @@
 validação cruzada
 """
 import pandas as pd
-import tensorflow as tf
 from keras.models import Sequential
 from keras.layers import Dense
 from sklearn.model_selection import cross_val_score
-from scikeras.wrappers import KerasClassifier, KerasRegressor
-from keras import backend as k
-from sklearn import metrics
-import time
+from keras.wrappers.scikit_learn import KerasRegressor
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn.compose import ColumnTransformer
 
@@ -60,17 +56,16 @@ previsores = ct.fit_transform(previsores).toarray()
 
 
 def criar_rede():  # atualizado: tensorflow==2.0.0-beta1
-    k.clear_session()
-    regressor = Sequential([
-        tf.keras.layers.Dense(units=158, activation='relu', input_dim=317),
-        tf.keras.layers.Dense(units=158, activation='relu'),
-        tf.keras.layers.Dense(units=1, activation='linear')])
+    regressor = Sequential()
+    regressor.add(Dense(units=158, activation='relu', input_dim=317))
+    regressor.add(Dense(units=158, activation='relu'))
+    regressor.add(Dense(units=1, activation='linear'))
     regressor.compile(loss='mean_absolute_error', optimizer='adam',
                       metrics=['mean_absolute_error'])
     return regressor
 
 # validação cruzada
-regressor = KerasRegressor(model = criar_rede, epochs = 100, batch_size = 300)
+regressor = KerasRegressor(build_fn = criar_rede, epochs = 100, batch_size = 300)
 
 resultados = cross_val_score(estimator = regressor, X = previsores, y = preco_real, cv = 10, scoring = 'neg_mean_absolute_error')
 
