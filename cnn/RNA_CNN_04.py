@@ -23,18 +23,24 @@ resultados = []
 a = np.zeros(5)
 b = np.zeros(shape = (classe.shape[0], 1))
 
-for indice_treinamento, indice_teste in kfold.split(previsores,
-                                                    np.zeros(shape = (classe.shape[0], 1))):
+for indice_treinamento, indice_teste in kfold.split(previsores, np.zeros(shape = (classe.shape[0], 1))):
+    
     classificador = Sequential()
+
+    # primeira parte
     classificador.add(Conv2D(32, (3,3), input_shape=(28,28,1), activation = 'relu'))
     classificador.add(MaxPooling2D(pool_size = (2,2)))
     classificador.add(Flatten())
+
+    # rede neural
     classificador.add(Dense(units = 128, activation = 'relu'))
     classificador.add(Dense(units = 10, activation = 'softmax'))
     classificador.compile(loss = 'categorical_crossentropy', optimizer = 'adam',
                           metrics = ['accuracy'])
+    # treinamento
     classificador.fit(previsores[indice_treinamento], classe[indice_treinamento],
                       batch_size = 128, epochs = 5)
+
     precisao = classificador.evaluate(previsores[indice_teste], classe[indice_teste])
     resultados.append(precisao[1])
 
