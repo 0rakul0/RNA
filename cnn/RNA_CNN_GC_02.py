@@ -38,18 +38,18 @@ gerador_teste = ImageDataGenerator(rescale=1./255)
 
 base_treino = gerador_treino.flow_from_directory('../data/gatos_cachorros/treino',
                                                  target_size=(64,64),
-                                                 batch_size=32,
+                                                 batch_size=16,
                                                  class_mode='binary')
 base_teste = gerador_teste.flow_from_directory('../data/gatos_cachorros/teste',
                                                target_size=(64, 64),
-                                               batch_size=32,
+                                               batch_size=16,
                                                class_mode='binary')
 
 classificador.fit(base_treino,
-                  steps_per_epoch=4000/32, # quatidade de imagens de treino passando uma a uma
-                  epochs=10,
+                  steps_per_epoch=4000/16, # quatidade de imagens de treino passando uma a uma
+                  epochs=50,
                   validation_data= base_teste,
-                  validation_steps=1000/32 # quatidade de imagens de teste passando uma a uma
+                  validation_steps=1000/16 # quatidade de imagens de teste passando uma a uma
                   )
 
 imagem_teste = image.load_img('../data/gatos_cachorros/treino/gato/cat.0.jpg', target_size=(64,64))
@@ -62,8 +62,8 @@ previsao = classificador.predict(imagem_teste)
 print(base_treino.class_indices)
 
 previsao = (previsao > 0.5)
-if previsao == True:
+if previsao == False:
     print('cachorro')
-elif previsao == False:
+elif previsao == True:
     print('gato')
 
