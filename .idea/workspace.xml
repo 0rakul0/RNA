@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5be3def-9403-4bcf-a997-b942ef483471" name="Changes" comment="novos arquivos">
-      <change afterPath="$PROJECT_DIR$/recomendadores/RNA_RECOMENDADOR_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recomendadores/RNA_REDUCAO_01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autoencoder/RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendadores/RNA_RECOMENDADOR_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/recomendadores/RNA_RECOMENDADOR_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,29 +75,7 @@
       <recent name="D:\GITHUB\RNA\data\kaggle_car" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RNA_REDUCAO_01">
-    <configuration name="RNA_MAPS_DISTRIBUICAO_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RNA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/autodistribuicao" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autodistribuicao/RNA_MAPS_DISTRIBUICAO_01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.RNA_NAO_SUPERVISIONADO_AUTOENCODER_01">
     <configuration name="RNA_MAPS_DISTRIBUICAO_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RNA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,6 +90,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autodistribuicao/RNA_MAPS_DISTRIBUICAO_02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RNA_NAO_SUPERVISIONADO_AUTOENCODER_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RNA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/autoencoder" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autoencoder/RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.RNA_NAO_SUPERVISIONADO_AUTOENCODER_01" />
         <item itemvalue="Python.RNA_REDUCAO_01" />
         <item itemvalue="Python.RNA_RECOMENDADOR_02" />
         <item itemvalue="Python.RNA_RECOMENDADOR_01" />
         <item itemvalue="Python.RNA_MAPS_DISTRIBUICAO_02" />
-        <item itemvalue="Python.RNA_MAPS_DISTRIBUICAO_01" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +224,7 @@
       <workItem from="1681397747618" duration="4685000" />
       <workItem from="1681568961752" duration="11151000" />
       <workItem from="1681859798777" duration="13000" />
-      <workItem from="1682176296986" duration="4354000" />
+      <workItem from="1682176296986" duration="11190000" />
     </task>
     <task id="LOCAL-00001" summary="atualizações">
       <created>1680357926029</created>
@@ -369,6 +367,7 @@
     <SUITE FILE_PATH="coverage/RNA$RNA_RNN_FINANCAS_03.coverage" NAME="RNA_RNN_FINANCAS_03 Coverage Results" MODIFIED="1680906714885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rnn" />
     <SUITE FILE_PATH="coverage/RNA$RNA_MAPS_DISTRIBUICAO_02.coverage" NAME="RNA_MAPS_DISTRIBUICAO_02 Coverage Results" MODIFIED="1681573393684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/autodistribuicao" />
     <SUITE FILE_PATH="coverage/RNA$RNA_iris_multclass_01.coverage" NAME="RNA_iris_multclass_01 Coverage Results" MODIFIED="1679951019470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multclasses" />
+    <SUITE FILE_PATH="coverage/RNA$RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.coverage" NAME="RNA_NAO_SUPERVISIONADO_AUTOENCODER_01 Coverage Results" MODIFIED="1682206581687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/autoencoder" />
     <SUITE FILE_PATH="coverage/RNA$RNA_CNN_01.coverage" NAME="RNA_CNN_01 Coverage Results" MODIFIED="1680474382702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
     <SUITE FILE_PATH="coverage/RNA$RNA_VIDEOGAME_04.coverage" NAME="RNA_VIDEOGAME_04 Coverage Results" MODIFIED="1680440652244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regressao_multiclass" />
     <SUITE FILE_PATH="coverage/RNA$RNA_dev_09.coverage" NAME="RNA_dev_09 Coverage Results" MODIFIED="1680448495043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/desenv_cancer" />
