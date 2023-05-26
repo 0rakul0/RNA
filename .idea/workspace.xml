@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5be3def-9403-4bcf-a997-b942ef483471" name="Changes" comment="novos arquivos">
-      <change afterPath="$PROJECT_DIR$/autoencoder/RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoencoder/RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoencoder/RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,6 +225,10 @@
       <workItem from="1681568961752" duration="11151000" />
       <workItem from="1681859798777" duration="13000" />
       <workItem from="1682176296986" duration="11190000" />
+      <workItem from="1684283696599" duration="956000" />
+      <workItem from="1684448280743" duration="2493000" />
+      <workItem from="1684966696687" duration="3994000" />
+      <workItem from="1685023353843" duration="2538000" />
     </task>
     <task id="LOCAL-00001" summary="atualizações">
       <created>1680357926029</created>
@@ -367,7 +371,7 @@
     <SUITE FILE_PATH="coverage/RNA$RNA_RNN_FINANCAS_03.coverage" NAME="RNA_RNN_FINANCAS_03 Coverage Results" MODIFIED="1680906714885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rnn" />
     <SUITE FILE_PATH="coverage/RNA$RNA_MAPS_DISTRIBUICAO_02.coverage" NAME="RNA_MAPS_DISTRIBUICAO_02 Coverage Results" MODIFIED="1681573393684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/autodistribuicao" />
     <SUITE FILE_PATH="coverage/RNA$RNA_iris_multclass_01.coverage" NAME="RNA_iris_multclass_01 Coverage Results" MODIFIED="1679951019470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multclasses" />
-    <SUITE FILE_PATH="coverage/RNA$RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.coverage" NAME="RNA_NAO_SUPERVISIONADO_AUTOENCODER_01 Coverage Results" MODIFIED="1682206581687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/autoencoder" />
+    <SUITE FILE_PATH="coverage/RNA$RNA_NAO_SUPERVISIONADO_AUTOENCODER_01.coverage" NAME="RNA_NAO_SUPERVISIONADO_AUTOENCODER_01 Coverage Results" MODIFIED="1684970544785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/autoencoder" />
     <SUITE FILE_PATH="coverage/RNA$RNA_CNN_01.coverage" NAME="RNA_CNN_01 Coverage Results" MODIFIED="1680474382702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
     <SUITE FILE_PATH="coverage/RNA$RNA_VIDEOGAME_04.coverage" NAME="RNA_VIDEOGAME_04 Coverage Results" MODIFIED="1680440652244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regressao_multiclass" />
     <SUITE FILE_PATH="coverage/RNA$RNA_dev_09.coverage" NAME="RNA_dev_09 Coverage Results" MODIFIED="1680448495043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/desenv_cancer" />
