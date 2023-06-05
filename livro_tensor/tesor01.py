@@ -13,8 +13,8 @@ from util.CominedAtributesAdder import *
 
 
 DONWLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml2/master/"
-HOUSING_PATH = os.path.join("./data/datasets", "housing")
-HOUSING_URL = DONWLOAD_ROOT + "./data/datasets/housing/housing.tgz"
+HOUSING_PATH = os.path.join("../data/datasets", "housing")
+HOUSING_URL = DONWLOAD_ROOT + "../data/datasets/housing/housing.tgz"
 
 def fecth_housing(housing_url=HOUSING_URL, housing_path=HOUSING_PATH):
     if not os.path.isdir(housing_path):
@@ -47,9 +47,6 @@ def split_train_test_por_id(data, test_ratio, id_column, hash=hashlib.md5):
     ids = data[id_column]
     in_test_set = ids.apply(lambda id_: test_set_check(id_, test_ratio, hash))
     return data.loc[~in_test_set], data.loc[in_test_set]
-
-
-
 
 
 if __name__ == "__main__":
